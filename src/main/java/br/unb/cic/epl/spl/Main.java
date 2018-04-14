@@ -34,13 +34,21 @@ public class Main {
 		Add result_add = new Add(new Literal(5), new Literal(3));
 		Sub result_sub = new Sub(new Literal(5), new Literal(3));
 		Mult result_mult = new Mult(new Literal(5), new Literal(3));
+		Add result_add_multiple = new Add(result_sub, result_sub);
+		
 		
 		System.out.println(result_add.print());
 		System.out.println(result_add.eval());
+		System.out.println(result_add.height());
 		System.out.println(result_sub.print());
 		System.out.println(result_sub.eval());
+		System.out.println(result_sub.height());
 		System.out.println(result_mult.print());
 		System.out.println(result_mult.eval());
+		System.out.println(result_mult.height());
+		System.out.println(result_add_multiple.print());
+		System.out.println(result_add_multiple.eval());
+		System.out.println(result_add_multiple.height());
 		
 		
 		
